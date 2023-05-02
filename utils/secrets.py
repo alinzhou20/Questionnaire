@@ -1,18 +1,18 @@
 
 class Secrets:
     class Email:
-        emailHost = 'xxxxx'
+        emailHost = 'smtp.qq.com'
         emailPort = 25
-        emailAddr = 'xxxxx'
-        emailPasswd = 'xxxxx'# 邮箱 SMTP 授权码，此处为虚拟，须修改
+        emailAddr = '1484929973@qq.com'
+        emailPasswd = 'prcgmccixlbojhaj'# 邮箱 SMTP 授权码，此处为虚拟，须修改
 
     class DataBase:
         # database information
 
-        host = 'xxxxx'
+        host = 'localhost'
         user = 'root'
-        passwd = 'xxxxx'  # 修改为您本地或远程的 mysql数据库信息
-        db = 'xxxxx'
+        passwd = '123456'  # 修改为您本地或远程的 mysql数据库信息
+        db = 'questionnaire'
 
     class Host:  # 修改为django允许运行的网址
         allowedHost = ['localhost', '127.0.0.1', 'xxxxx']
