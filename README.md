@@ -2,9 +2,7 @@
 
 [![python3.8](https://img.shields.io/badge/python-%3E%3D3.8-brightgreen)](https://www.python.org/)  [![django3.2](https://img.shields.io/badge/django-3.0-blue)](https://docs.djangoproject.com/en/3.2/releases/3.2/)
 
-> 北航 1921 软件工程暑期实践 满分项目 ~~万一有更多star呢~~
-
-前端：[https://github.com/ZewanHuang/Questionnaire-Planet](https://github.com/ZewanHuang/Questionnaire-Planet)
+> 浙工大 计师2001 软件工程实践
 
 ## 项目介绍
 
@@ -39,11 +37,6 @@ pip install -r requirements_linux.txt
 ```
 此外，若您想将此项目部署至linux，还需再linux上安装`Libreoffice`，并安装宋体字体，以问卷导出pdf使用。否则使用相应功能会出现问题。本项目中使用`Libreoffice`的位置为`/Submit/export.py/doc2pdf_linux`中依此命令导出pdf，若您安装的Libreoffice 版本不为7.0 也请对应修改版本号。而windwos与linux所需依赖不同也就在pdf导出上面，其余全部相同。
 
-```powershell
-cmd = 'libreoffice7.0 --headless --invisible  --convert-to pdf:writer_pdf_Export'.split() + [docPath] + ['--outdir'] + [pdfPath]
-```
-
-
 
 ## 如何使用
 
@@ -77,14 +70,3 @@ cmd = 'libreoffice7.0 --headless --invisible  --convert-to pdf:writer_pdf_Export
 
 ![statistic](https://github.com/ZewanHuang/Questionnaire-Planet/blob/master/src/assets/images/statistic.png)
 
-
-
-# 其他
-
-
-
-由于此项目在开发后进行了一次**未经测试**的大规模项目结构重构，实际运行时可能会遇到一些依赖问题，欢迎在遇到问题时使用Email或Issue联系我们。
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=BUAASE-Slime/Questionnaire-Planet-Django&type=Date)](https://star-history.com/#BUAASE-Slime/Questionnaire-Planet-Django&Date)
