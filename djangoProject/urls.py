@@ -22,7 +22,6 @@ from django.conf.urls import url
 from django.views.static import serve
 
 import Qn.views
-import resources.views
 
 urlpatterns = [
     path('api/qs/admin/', admin.site.urls),
@@ -32,9 +31,6 @@ urlpatterns = [
     path('api/qs/all_count/submit', Qn.views.all_submittion_count),
     path('api/qs/sp/', include(('signup.urls', 'signup'))),
     path('api/qs/ep/', include(('epidemic.urls', 'epidemic'))),
-
-    path('api/qs/upload/image', resources.views.upload_image),
-    path('api/qs/upload/video', resources.views.upload_video),
 
     url(r'media/(?P<path>.*)',serve,{'document_root':settings.MEDIA_ROOT}),
 

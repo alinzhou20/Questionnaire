@@ -2,7 +2,6 @@ from django.conf.urls.static import static
 from django.urls import path
 from .views import *
 # from .no_use_func import *
-from exam.views import  save_exam_answer_by_code
 from vote.views import *
 # from .schedules import timing_task
 urlpatterns = [
@@ -35,7 +34,6 @@ urlpatterns = [
     path('save/qn/deploy',save_and_deploy),
     #保存并发布
     # path('save/exam/paper',save_exam_answer),
-    path('save/exam/paper/by/code', save_exam_answer_by_code),
     #保存考试答卷
     path('deploy_qn',deploy_qn),
     #发布问卷
