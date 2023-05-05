@@ -2,7 +2,6 @@ from django.conf.urls.static import static
 from django.urls import path
 from .views import *
 # from .no_use_func import *
-from vote.views import *
 # from .schedules import timing_task
 urlpatterns = [
     path('delete/qn/recover', recover_survey_from_delete),
@@ -63,7 +62,6 @@ urlpatterns = [
     path('get/qn/stat_analysis',submit_reporter),
     #查看答卷
     # path('get/vote/current_situation',ret_vote_answer),
-    path('get/vote/current_situation/from/code', ret_vote_answer_by_code),
     #获取投票当前结果
     path('get/ip', get_ip),
     #获取IP地址定位

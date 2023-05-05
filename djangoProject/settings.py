@@ -39,15 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles', # django内部自动配置的应用
 
-    'corsheaders',
+    'corsheaders',  # 实现前后端跨域请求
 
     'userinfo',
     'Qn',
 
     'Submit',
-    'vote',
     'signup',
     'epidemic',
 ]
