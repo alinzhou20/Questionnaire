@@ -23,6 +23,7 @@ utc = pytz.UTC
 @api_view(['POST'])
 def login(request):
     if request.session.get('is_login'):  # login repeatedly not allowed
+        print(request.session)
         return JsonResponse({'status_code': 2})
 
     login_form = LoginForm(request.POST)
