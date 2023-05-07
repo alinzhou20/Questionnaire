@@ -48,7 +48,6 @@ INSTALLED_APPS = [
 
     'Submit',
     'signup',
-    'epidemic',
 ]
 
 MIDDLEWARE = [

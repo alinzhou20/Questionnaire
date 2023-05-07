@@ -1,7 +1,5 @@
 # 问卷星球
 
-[![python3.8](https://img.shields.io/badge/python-%3E%3D3.8-brightgreen)](https://www.python.org/)  [![django3.2](https://img.shields.io/badge/django-3.0-blue)](https://docs.djangoproject.com/en/3.2/releases/3.2/)
-
 > 浙工大 计师2001 软件工程实践
 
 ## 项目介绍
@@ -32,41 +30,14 @@ Django 3.0 及以上
 ```
 pip install -r requirements.txt 
 <!-- windows -->
-pip install -r requirements_linux.txt 
-<!-- linux -->
-```
-此外，若您想将此项目部署至linux，还需再linux上安装`Libreoffice`，并安装宋体字体，以问卷导出pdf使用。否则使用相应功能会出现问题。本项目中使用`Libreoffice`的位置为`/Submit/export.py/doc2pdf_linux`中依此命令导出pdf，若您安装的Libreoffice 版本不为7.0 也请对应修改版本号。而windwos与linux所需依赖不同也就在pdf导出上面，其余全部相同。
-
 
 ## 如何使用
 
-> 须结合 [前端说明](https://github.com/ZewanHuang/Online-Publish-Django) 进行配置
+> 须结合 [前端说明] 进行配置
 
 运行项目前，请根据文件内容提示修改 **utils/secrets.py**，其中包含前端路由 `webFront`、后端路由 `webBack`，数据库基本信息 `DataBase`  和基本邮箱信息`Email`。 如需连接其他类型的数据库也请对应修改`utils/secrets.py `的内容
 
 而后使用`python manage.py makemigrations`   和 `python manage.py migrate`  生成对应数据库文件
 
 本地运行项目，使用`python manage.py runserver`运行本项目，由于前后端的分离性，可以结合前端项目来运行此项目
-
-## 基本页面展示
-
-欢迎主页
-
-![welcome](https://github.com/ZewanHuang/Questionnaire-Planet/blob/master/src/assets/images/home.png)
-
-管理中心
-
-![center](https://github.com/ZewanHuang/Questionnaire-Planet/blob/master/src/assets/images/center.png)
-
-编辑界面
-
-![edit](https://github.com/ZewanHuang/Questionnaire-Planet/blob/master/src/assets/images/edit.png)
-
-填写界面
-
-![publish](https://github.com/ZewanHuang/Questionnaire-Planet/blob/master/src/assets/images/publish.png)
-
-统计界面
-
-![statistic](https://github.com/ZewanHuang/Questionnaire-Planet/blob/master/src/assets/images/statistic.png)
 
